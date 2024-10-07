@@ -3,8 +3,8 @@
 
 
 def pascal_triangle(n):
-    """Returns a list of lists of numbers
-    that represent the pascal triangle"""
+    """Returns a rows and columns of numbers
+    that make up the pascal triangle"""
     if n <= 0:
         return []
 
