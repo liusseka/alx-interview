@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+"""Task checks and uses keys to unlock boxes"""
+
 def canUnlockAll(boxes):
     unlocked = set()  
     unlocked.add(0)   
