@@ -11,7 +11,7 @@
 
 ### Usage
 
-'''
+```
 alexa@ubuntu:~/0x03-log_parsing$ cat 0-generator.py
 #!/usr/bin/python3
 import random
@@ -73,4 +73,4 @@ KeyboardInterrupt
 sleep(random.random())
 KeyboardInterrupt
 alexa@ubuntu:~/0x03-log_parsing$
-'''
+```
