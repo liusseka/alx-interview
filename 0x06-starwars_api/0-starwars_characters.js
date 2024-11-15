@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const request = require("request");
+const request = require('request');
 
 // Get the movie ID from the command-line argument
 const movieId = process.argv[2];
@@ -11,7 +11,7 @@ const apiUrl = `https://swapi.dev/api/films/${movieId}/`;
 // Make a request to the API
 request(apiUrl, (error, response, body) => {
   if (error) {
-    console.log("Error:", error);
+    console.log('Error:', error);
     return;
   }
 
@@ -22,7 +22,7 @@ request(apiUrl, (error, response, body) => {
     movieData.characters.forEach((url) => {
       request(url, (error, response, body) => {
         if (error) {
-          console.log("Error:", error);
+          console.log('Error:', error);
           return;
         }
 
@@ -34,7 +34,7 @@ request(apiUrl, (error, response, body) => {
     });
   } else {
     console.log(
-      "Failed to retrieve movie data. HTTP Status Code:",
+      'Failed to retrieve movie data. HTTP Status Code:',
       response.statusCode
     );
   }
